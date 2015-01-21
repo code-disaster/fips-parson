@@ -15,3 +15,7 @@ fips_begin_lib(parson)
     fips_files(parson.c parson.h)
 
 fips_end_lib()
+
+if(FIPS_WINDOWS)
+    set_target_properties(parson PROPERTIES COMPILE_FLAGS "/wd4242 /wd4244 /wd4702")
+endif()
