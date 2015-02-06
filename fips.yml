@@ -5,4 +5,4 @@
 exports:
     header-dirs: [ parson ]
     modules :
-        parson: . 
+        parson: .
