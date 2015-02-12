@@ -9,7 +9,7 @@ include("${FIPS_ROOT_DIR}/cmake/fips.cmake")
 
 fips_begin_lib(parson)
     
-    include_directories(parson)
+    fips_include_directories(parson)
 
     fips_dir(parson)
     fips_files(parson.c parson.h)
